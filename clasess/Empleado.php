@@ -1,6 +1,6 @@
 <?php
 
-require_once 'Database.php';
+require_once ($_SERVER['DOCUMENT_ROOT']. "/clasess/Database.php");
 
 class Empleado{
 	private $pdo;

@@ -1,7 +1,9 @@
-<?php include "views/partials/header.php"; ?>
+<?php
+	require_once ($_SERVER['DOCUMENT_ROOT']. "/views/partials/header.php");
+	require_once ($_SERVER['DOCUMENT_ROOT']. "/clasess/Empleado.php");
+?>
 
 <?php
-	require_once 'clasess/Empleado.php';
 	$model = new Empleado();
 
 	if (isset($_POST['searchBTN'])) {
@@ -70,4 +72,6 @@
 	</div>
 </div>
 
-<?php include "views/partials/footer.php"; ?>
+<?php
+	require_once ($_SERVER['DOCUMENT_ROOT']. "/views/partials/footer.php");
+?>

@@ -1,6 +1,9 @@
-<?php require_once "partials/header.php"; ?>
 <?php
-	require_once $_SERVER['DOCUMENT_ROOT'] . '/clasess/Empleado.php';
+	require_once ($_SERVER['DOCUMENT_ROOT']. "/views/partials/header.php");
+	require_once ($_SERVER['DOCUMENT_ROOT']. "/clasess/Empleado.php");
+?>
+
+<?php
 	$model = new Empleado();
 	$id = $_GET['id'];
 
@@ -63,4 +66,6 @@
 	</div>
 </div>
 
-<?php require "partials/footer.php"; ?>
+<?php
+	require_once ($_SERVER['DOCUMENT_ROOT']. "/views/partials/footer.php");
+?>

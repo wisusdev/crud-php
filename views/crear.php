@@ -1,8 +1,10 @@
-<?php include 'partials/header.php'; ?>
+<?php
+	require_once ($_SERVER['DOCUMENT_ROOT']. "/views/partials/header.php");
+	require_once ($_SERVER['DOCUMENT_ROOT']. "/clasess/Empleado.php");
+?>
 
 <?php
 	if (isset($_POST['submit'])) {
-		require_once $_SERVER['DOCUMENT_ROOT'] . '/clasess/Empleado.php';
 		$model = new Empleado();
 
 		$empleado = array(
@@ -69,4 +71,7 @@
 	</div>
 </div>
 
-<?php include 'partials/footer.php'; ?>
+<?php
+	require_once ($_SERVER['DOCUMENT_ROOT']. "/views/partials/footer.php");
+?>
+
